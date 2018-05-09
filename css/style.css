@@ -11,7 +11,7 @@ body {
     left: 0;
     bottom: 0;
 }
-
+/* check this later*/
 .search-bar {
     display: block;
     position: fixed;
@@ -27,7 +27,7 @@ body {
     width: 500px;
     margin: 0 auto;
 }
-
+/*will modify a couple of things here*/
 .result-list {
     display: none;
     position: absolute;
@@ -40,7 +40,7 @@ body {
     padding: 30px;
     overflow-y: scroll;
 }
-
+/*font-size:35px mmm*/
 .close-result-list {
     position: absolute;
     right: 10px;
