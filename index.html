@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Google Maps Place Finder</title>
-    <script src="components/jquery.min.js"></script>
-    <script src="components/bootstrap/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="components/bootstrap/bootstrap.min.css">
-    
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/style.css">
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initApp&key=AIzaSyC75NcGcODmYPk3AW-IFaprl0vLG2x0v24"></script>
+<head>
+	<title>Google Maps Place Finder</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <script src="components/jquery.min.js"></script>-->
+	<!-- <script src="components/bootstrap/bootstrap.min.js"></script>-->
+	<!-- <link rel="stylesheet" href="components/bootstrap/bootstrap.min.css">-->
+
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initApp&key=AIzaSyC75NcGcODmYPk3AW-IFaprl0vLG2x0v24"></script>
 </head>
 
 <body>
-    <div id="mapcanvas">
-    </div>
+	<div id="mapcanvas">
+	</div>
 
-    <div class="search-bar">
-      <div class="search-form">
-        <div class="input-group align-middle">
-          <input type="text" class="city-search-input form-control" placeholder="Enter a City">
-        </div>
-      </div>
-    </div>
+	<div class="search-bar">
+		<div class="search-form">
+			<div class="input-group align-middle">
+				<input type="text" class="city-search-input form-control" placeholder="Enter a City">
+			</div>
+		</div>
+	</div>
 
-    <div class="result-list">
-      <div class="close-result-list">&times;</div>
+	<div class="result-list">
+		<div class="close-result-list">&times;</div>
 
-      <h2 class="city-name"></h2>
-      
-      <div class="button-row">
-        <div class="row">
-          <div class="col-sm">
-            <button class="attraction-btn btn btn-primary" data-attraction="Accommodation">Accommodation</button>
-            <button class="attraction-btn btn btn-primary" data-attraction="Tourist+Attractions">Tourist Attractions</button>
-          </div>
-        </div>
+		<h2 class="city-name"></h2>
 
-        <div class="row">
-          <div class="col-sm">
-            <button class="attraction-btn btn btn-primary" data-attraction="Bars">Bars</button>
-            <button class="attraction-btn btn btn-primary" data-attraction="Restaurants">Restaurants</button>
-          </div>
-        </div>
-      </div>
-      
-      <h5 class="search-type-title"></h5>
-      <div class="search-results">
-        
-      </div>
+		<div class="button-row">
+			<div class="row">
+				<div class="col-sm">
+					<button class="attraction-btn btn btn-primary" data-attraction="Accommodation">Accommodation</button>
+					<button class="attraction-btn btn btn-primary" data-attraction="Tourist+Attractions">Tourist Attractions</button>
+				</div>
+			</div>
 
-    </div>
+			<div class="row">
+				<div class="col-sm">
+					<button class="attraction-btn btn btn-primary" data-attraction="Bars">Bars</button>
+					<button class="attraction-btn btn btn-primary" data-attraction="Restaurants">Restaurants</button>
+				</div>
+			</div>
+		</div>
+
+		<h5 class="search-type-title"></h5>
+		<div class="search-results">
+
+		</div>
+
+	</div>
 </body>
 
 </html>
